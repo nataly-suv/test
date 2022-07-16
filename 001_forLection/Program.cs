@@ -1,16 +1,18 @@
-﻿// четвертая задача на 1-ом семинаре. Вывести целые числа от -N до N
-
-Console.WriteLine("Введите положительное число");
+﻿// пятая задача. Показывает последюю цифру 3-х значного числа
+Console.WriteLine("Введите 3-х значное число");
 string? inNumber = Console.ReadLine();
 if (inNumber != null)
 {
     int number = int.Parse(inNumber);
-    int startNumber = 1;
-    string line = "0";
-    while (startNumber <= number)
-    {
-        line = startNumber * (-1) + ", " + line + ", " + startNumber + ", ";
-        startNumber++;
-    }
-        Console.WriteLine(line);
+    int outNumber = number%10;
+    Console.WriteLine(outNumber);
+
 }
+
+
+// string? inNumber = Console.ReadLine();
+// if (inNumber != null)
+// {
+//     char [] M = inNumber.ToCharArray();
+//     Console.WriteLine(M[2]);
+// }

@@ -7,23 +7,14 @@ if (inNumber1 != null && inNumber2 != null)
 {
     int number1 = int.Parse(inNumber1);
     int number2 = int.Parse(inNumber2);
-    if (number1 == number2 * number2)
+    if (Math.Sqrt(number1) == number2)
     {
-        Console.Write("Yes");
+        Console.WriteLine("Yes");
     }
     else
     {
-        Console.Write("No");
+        Console.WriteLine("No");
     }
-
 }
 
 
-    // if (Math.Sqrt(number1) == number2)
-    // {
-    //     Console.WriteLine("Yes");
-    // }
-    // else
-    // {
-    //     Console.WriteLine("No");
-    // }
